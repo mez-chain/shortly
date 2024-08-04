@@ -522,12 +522,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.top-6 {
-  top: 1.5rem;
+.left-6 {
+  left: 1.5rem;
 }
 
-.top-20 {
-  top: 5rem;
+.right-6 {
+  right: 1.5rem;
 }
 
 .z-40 {
@@ -606,14 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-b {

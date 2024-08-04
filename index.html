@@ -53,7 +53,7 @@
           >
         </div>
 
-        <!-- @todo Hamburger Button -->
+        <!-- Hamburger Button -->
         <div class="lg:hidden">
           <button id="menu-btn" class="z-40 block hamburger focus:outline-none">
             <span class="bg-grayishViolet hamburger-top"></span>
@@ -61,23 +61,27 @@
             <span class="bg-grayishViolet hamburger-bottom"></span>
           </button>
         </div>
+
+        <!-- Hamburger Menu -->
+        <div
+          id="menu"
+          class="absolute top-0 left-0 right-0 mx-6 mt-20 p-8 rounded-md hidden flex-col bg-darkViolet items-center text-center space-y-6 text-white font-bold z-100"
+        >
+          <div class="flex flex-col space-y-6">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+          </div>
+          <div class="w-full border-b border-b-1 border-grayishViolet"></div>
+          <div class="w-full flex flex-col space-y-6">
+            <a href="#">Login</a>
+            <a href="" class="bg-cyan rounded-full py-3">Sign Up</a>
+          </div>
+        </div>
       </div>
     </nav>
-    <!-- @todo Hamburger Menu -->
-    <div
-      id="menu"
-      class="absolute top-0 left-0 right-0 mx-6 mt-20 p-8 rounded-md flex flex-col bg-darkViolet items-center text-center space-y-6 text-white font-bold z-100"
-    >
-      <div class="flex flex-col space-y-6">
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Resources</a>
-      </div>
-      <div class="w-full border-b border-b-1 border-grayishViolet"></div>
-      <div class="w-full flex flex-col space-y-6">
-        <a href="#">Login</a>
-        <a href="" class="bg-cyan rounded-full py-3">Sign Up</a>
-      </div>
-    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
   </body>
 </html>
