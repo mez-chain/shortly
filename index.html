@@ -19,7 +19,43 @@
     <title>Shortly</title>
   </head>
   <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+    <!-- Nav container -->
+    <nav class="relative container p-6 mx-auto">
+      <!-- Flex Container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo/Menu Container -->
+        <div class="flex items-center space-x-20">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="" />
+
+          <!-- Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Resources</a
+            >
+          </div>
+        </div>
+
+        <!-- Buttons Container -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex">
+          <!-- Button 1 -->
+          <a href="#" class="text-grayishViolet hover:text-darkViolet">Login</a>
+          <a
+            href="#"
+            class="text-white bg-cyan rounded-full px-8 py-3 hover:opacity-70"
+            >Sign Up</a
+          >
+        </div>
+
+        <!-- @todo Hamburger Button -->
+      </div>
+    </nav>
+    <!-- @todo Hamburger Menu -->
   </body>
 </html>
