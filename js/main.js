@@ -22,6 +22,29 @@ function hideMenu() {
   }
 }
 
+// Check valid Links
+function checkValidLinks() {
+  errMsg.classList.remove("text-green-500");
+  errMsg.classList.remove("text-red");
+  myLink.classList.remove("border-red");
+  myLink.classList.remove("border-emerald-500");
+
+  if (myLink.value === "") {
+    myLink.classList.add("border-red");
+    errMsg.classList.add("text-red");
+    errMsg.innerHTML = "Please write a url!";
+  } else if (regLinkExp.test(myLink.value) === false) {
+    myLink.classList.add("border-red");
+    errMsg.classList.add("text-red");
+    errMsg.innerHTML = "Please write a valid url!";
+  } else {
+    myLink.classList.add("border-emerald-500");
+    errMsg.classList.add("text-green-500");
+    errMsg.innerHTML = "URL shorten succefully!";
+    myLink.value = "";
+  }
+}
+
 // Call functions
 hamburgerBtn.addEventListener("click", toggleMenu);
 window.addEventListener("resize", hideMenu);
