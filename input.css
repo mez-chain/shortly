@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hamburger Menu */
+.error {
+  @apply text-red border-red;
+}
+
+.success {
+  @apply text-green-400 border-emerald-400;
+}
+
+#cta {
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ficon:hover {
+  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
+    brightness(89%) contrast(85%);
+}
+
+/* Mobile Menu */
 .hamburger {
   cursor: pointer;
   width: 24px;
